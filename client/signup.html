@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <main>
+      <aside>Join Our Protolal now</aside>
+      <section class="right-section">
+        <form>
+          <h3>Create Student Acount</h3>
+          <div class="inputs">
+            <section id="student-info">
+              <h4><span>Student info</span></h4>
+              <div class="input">
+                <label for="regNo">Registration Number</label
+                ><input type="text" id="regNo" />
+              </div>
+              <div class="input">
+                <label for="firstName">First Name</label
+                ><input type="text" id="firstName" />
+              </div>
+              <div class="input">
+                <label for="lastName">Last Name</label
+                ><input type="text" id="lastName" />
+              </div>
+              <div class="input">
+                <label for="midleName">Midle Name</label
+                ><input type="text" id="midleName" />
+              </div>
+            </section>
+            <section id="accademic-info">
+              <h4><span>Accademic information</span></h4>
+              <div class="input">
+                <label for="school">School</label
+                ><select type="text" id="school"></select>
+              </div>
+              <div class="input">
+                <label for="year">Year of Study</label
+                ><select type="text" id="year"></select>
+              </div>
+              <div class="input">
+                <label for="depertiment">Depertiment</label
+                ><select type="text" id="depertiment"></select>
+              </div>
+            </section>
+            <section id="accademic-info">
+              <h4><span>Credentials</span></h4>
+              <div class="input">
+                <label for="email">Email</label
+                ><select type="text" id="email"></select>
+              </div>
+              <div class="input">
+                <label for="new_pass">New Password</label
+                ><select type="text" id="new_pass"></select>
+              </div>
+              <div class="input">
+                <label for="conf_pass">Confirm New Password</label
+                ><select type="text" id="conf_pass"></select>
+              </div>
+            </section>
+            <button>Submit</button>
+          </div>
+
+          Alread have Account <a href="./login.html"> Login</a> Inseated
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
+<style>
+  * {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    display: flex;
+  }
+
+  aside {
+    width: 50%;
+    color: white;
+    background-color: black;
+    height: 100vh;
+  }
+  main .right-section {
+    padding: 1.2rem;
+    overflow-y: scroll;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+  .inputs section {
+    width: fit-content;
+  }
+  .input {
+    width: fit-content;
+    display: flex;
+    border: solid 1px black;
+    margin: 0.5rem;
+    position: relative;
+    height: fit-content;
+    margin-block: 1.5rem;
+  }
+  h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    padding: 0;
+    margin: 0;
+  }
+  .input label {
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    margin-top: -0.5rem;
+    padding-inline: 2px;
+    margin-inline-start: 4px;
+    background-color: white;
+  }
+  .input input,
+  .input select,
+  button {
+    height: 1.2rem;
+    padding: 5px;
+    outline: none;
+    width: 15rem;
+  }
+  h4 {
+    position: relative;
+    border-bottom: 2px solid;
+    text-align: center;
+  }
+  h4 span {
+    margin-bottom: -0.5rem;
+    bottom: 0;
+    background-color: white;
+    margin-inline: auto;
+    left: 0;
+    text-align: center;
+  }
+  button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    height: fit-content;
+  }
+</style>

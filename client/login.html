@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="./js/login.js" type="module" defer></script>
+  </head>
+  <body>
+    <section>
+      <form action="">
+        <h1>Login</h1>
+        <div id="message"></div>
+        <div>
+          <input type="text" id="username" placeholder="Enter username" />
+        </div>
+        <div>
+          <input type="text" id="password" placeholder="Enter Password" />
+        </div>
+        <div><button id="login">LOGIN</button></div>
+
+        <div>
+          <button id="signup" onclick="location.href='signup.html'">
+            SiginUp
+          </button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: hsl(0, 0%, 90%);
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 4rem;
+  }
+  form {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  input,
+  button,
+  select {
+    max-width: 100%;
+    width: 100%;
+    flex-grow: 1;
+    padding: 0.2rem;
+    min-height: 2rem;
+    max-height: 2rem;
+  }
+  input {
+    max-width: 100%;
+    max-height: fit-content;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding-block: 0.1rem;
+  }
+  form div {
+    width: 15rem;
+    overflow: hidden;
+    max-height: 2.5rem;
+    border: 1px solid black;
+  }
+
+  select,
+  button {
+    padding: 0.6rem;
+    margin: 0;
+    border: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  #login {
+    background-color: black;
+    color: white;
+  }
+</style>

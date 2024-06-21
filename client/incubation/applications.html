@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student DashBoard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <script src="../js/appliction_incubation.js" defer></script>
+  <body>
+    <nav>
+      <div class="navbarBrand">INCS</div>
+      <ul>
+        <li><a href="./dashboard.html">Dash Board </a></li>
+        <li><a href="./applications.html">aplications</a></li>
+        <li>
+          <a href="./dashboard.html"
+            >notifications (<span id="notifications">0</span>)
+          </a>
+        </li>
+        <li><a href="./dashboard.html" class="btn-logout">logout</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h3 style="text-align: center; padding-block: 1rem">
+       /applications</span>
+      </h3>
+        <div class="btns-project">
+        <div class="btn-project" data-status="pending">pending</div>
+        <div class="btn-project" data-status="rejected">Rejected</div>
+        <div class="btn-project" data-status="approved">Approved</div>
+      </div>
+      <section id="applications">
+      </section>
+    </main>
+  </body>
+</html>
+<style>
+  .btns-project {
+    display: flex;
+    flex: 1;
+    padding-inline: 2rem;
+  }
+   .btn-project {
+    display: flex;
+    flex: 1;
+    width: 33%;
+    padding: .5rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+    .btn-project:hover{
+      background-color: #f0f0f0;
+      }
+      .btn-active{
+        background-color: #fffffe;
+      }  
+      .n404{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        min-width: 100%;
+      }  
+</style>

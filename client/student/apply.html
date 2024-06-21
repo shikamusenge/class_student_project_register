@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student DashBoard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <script src="../js/apply.js" defer></script>
+  <body>
+    <nav>
+      <div class="navbarBrand">INCS</div>
+      <ul>
+        <li><a href="./dashboard.html">Dash Board </a></li>
+        <li><a href="./applications.html">My aplications</a></li>
+        <li><a href="./apply.html">apply</a></li>
+        <li>
+          <a href="./dashboard.html"
+            >notifications (<span id="notifications">0</span>)
+          </a>
+        </li>
+        <li><a href="./dashboard.html" class="btn-logout">logout</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h3 style="text-align: center; padding-block: 1rem">
+       /apply</span>
+      </h3>
+      <section id="apply">
+        <form action="">
+            <h1>Enter Project Information</h1>
+            <div class="input">
+                <label for="pro_title">Project Title</label>
+                <input type="text" name="" id="pro_title">
+            </div>
+            <div class="input">
+                <label for="desc">Project Description</label>
+                <textarea  id="desc" placeholder="Enter description Minumum 200 words"></textarea>
+            </div>
+
+            <input type="button" value="submit">
+            <input type="reset" value="Clear form">
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
+<style>
+    .input{
+        display: grid;
+    }
+    .input textarea{
+        min-height: 200px;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+    }
+    .input textarea, .input input{
+        padding: .5rem;
+    }
+    .input label{
+        margin-top: 1rem;
+    }
+    #apply{
+        margin: 2rem;
+    }
+
+    input[type="button"]{
+        padding: .3rem;
+        background-color: black;
+        color: white;
+        outline: none;
+        cursor: pointer;
+    }
+    input[type="reset"]{
+        padding: .3rem;
+        background-color: black;
+        color: white;
+        outline: none;
+    }
+</style>

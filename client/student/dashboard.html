@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student DashBoard</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbarBrand">INCS</div>
+      <ul>
+        <li><a href="./dashboard.html">Dash Board </a></li>
+        <li><a href="./applications.html">My aplications</a></li>
+        <li>
+          <a href="./dashboard.html"
+            >notifications (<span id="notifications">0</span>)
+          </a>
+        </li>
+        <li><a href="./dashboard.html" class="btn-logout">logout</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h3 style="text-align: center; padding-block: 1rem">
+        Welcome Back <span id="user">@john Doe</span>
+      </h3>
+      <section id="dash-data">
+        <div class="card">
+          <h3>Total Applications Sent</h3>
+          <div id="app-value">0</div>
+        </div>
+        <div class="card">
+          <h3>Applications waiting</h3>
+          <div id="app-value">0</div>
+        </div>
+        <div class="card">
+          <h3>Applications aproved</h3>
+          <div id="app-value">0</div>
+        </div>
+        <div class="card">
+          <h3>Applications rejected</h3>
+          <div id="app-value">0</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

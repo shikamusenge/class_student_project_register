@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans";
+}
+
+body,
+html {
+  background-color: hsl(0, 0%, 92%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  background-color: black;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+nav ul .btn-logout {
+  margin-inline: 2rem;
+  background-color: white;
+  border-radius: 0.4rem;
+  padding: 4px;
+  color: red;
+}
+
+.card {
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  height: fit-content;
+}
+
+#dash-data {
+  display: flex;
+  padding: 2rem;
+  justify-items: center;
+  height: calc(100vh - 80px);
+}
+
+.card-footer {
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.application-card {
+  padding: 0.9rem;
+  background-color: white;
+  width: 48%;
+}
+
+.application-card p {
+  font-weight: lighter;
+  font-size: 12px;
+  margin-block: 0.4rem;
+  margin-inline: 0.3rem;
+}
+
+.application-card .btns {
+  gap: 0.4rem;
+}
+
+.application-card .app-date {
+  font-size: 12px;
+  text-align: end;
+}
+
+.application-card div {
+  padding-top: 1rem;
+}
+
+#applications {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(195, 189, 189);
+}
+.btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 0.2rem 0.4rem;
+}
